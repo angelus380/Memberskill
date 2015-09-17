@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-  //  Clicking on title shows options //
   $(".title").click(function(){
     $(this)
     .parents(".box")
@@ -8,14 +7,12 @@ $(document).ready(function(){
     .slideToggle()
   })
 
-  //  Dropdown options makes automate changes //
   $("select").change(function(){
     $(".calculator").removeClass("bgred bgyellow bgblue red yellow blue");
     $(".fitbar").removeClass("bgred bgyellow bgblue red yellow blue");
-    $(this).closest(".weight").removeClass("wscale-0 wscale-1 wscale-2 wscale-3 wscale-4 wscale-5");
-    $(this).closest(".points").removeClass("pscale-0 pscale-1 pscale-2 pscale-3 pscale-4 pscale-5");
+    $(this).closest(".project").removeClass("pscale-0 pscale-1 pscale-2 pscale-3 pscale-4 pscale-5");
+    $(this).closest(".skill").removeClass("sscale-0 sscale-1 sscale-2 sscale-3 sscale-4 sscale-5");
     
-    //  Changes color of fitbar //
     var fit = $("#fit").text();
     if (fit < 50){
       $(".fitbar")
@@ -27,11 +24,9 @@ $(document).ready(function(){
       $(".fitbar")
       .addClass("bgblue");
 
-    //  changes width of fitbar //
     var finalFit = fit + "%";
     $(".fitbar").css("width", finalFit)
 
-    //  changes color of totalfit //
     var total = $("#fit").text();
     if (total < 50){
       $("#fit").parent()
@@ -43,7 +38,6 @@ $(document).ready(function(){
       $("#fit").parent()
       .addClass("blue");
 
-    //  changes color of numbers from challenge  //
     var ta = +$("#challenge").text();
     if (ta < 50){
       $("#challenge").parent()
@@ -55,7 +49,6 @@ $(document).ready(function(){
       $("#challenge").parent()
       .addClass("bgblue");
     
-    //  calculates environment  //
     var tb = +$("#environment").text();
     if (tb < 50){
       $("#environment").parent()
@@ -67,7 +60,6 @@ $(document).ready(function(){
       $("#environment").parent()
       .addClass("bgblue");
     
-    //  calculates economics  //
     var tc = +$("#economics").text();
     if (tc < 50){
       $("#economics").parent()
@@ -79,7 +71,6 @@ $(document).ready(function(){
       $("#economics").parent()
       .addClass("bgblue");
     
-    //  calculates competencies //
     var td = +$("#competencies").text();
     if (td < 50){
       $("#competencies").parent()
@@ -91,62 +82,61 @@ $(document).ready(function(){
       $("#competencies").parent()
       .addClass("bgblue");
 
-    //  changes "weight" dropdown background-color//
-    var weight = +$(this).closest(".weight").val();
+    var weight = +$(this).closest(".project").val();
     switch (weight){
       case 0:
-        $(this).closest(".weight")
-        .addClass("wscale-0")
+        $(this).closest(".project")
+        .addClass("pscale-0")
         break;
       case 1:
-        $(this).closest(".weight")
-        .addClass("wscale-1")
+        $(this).closest(".project")
+        .addClass("pscale-1")
         break;
       case 2:
-        $(this).closest(".weight")
-        .addClass("wscale-2")
+       $(this).closest(".project")
+        .addClass("pscale-2")
         break;
       case 3:
-        $(this).closest(".weight")
-        .addClass("wscale-3")
+        $(this).closest(".project")
+        .addClass("pscale-3")
         break;
       case 4:
-        $(this).closest(".weight")
-        .addClass("wscale-4")
+        $(this).closest(".project")
+        .addClass("pscale-4")
         break;
       case 5:
-        $(this).closest(".weight")
-        .addClass("wscale-5")
+        $(this).closest(".project")
+        .addClass("pscale-5")
         break;
       default:
     }
 
     //  changes "points" dropdown background-color//
-    var points = +$(this).closest(".points").val();
+    var points = +$(this).closest(".skill").val();
     switch (points){
       case 0:
-        $(this).closest(".points")
-        .addClass("pscale-0")
+        $(this).closest(".skill")
+        .addClass("sscale-0")
         break;
       case 1:
-        $(this).closest(".points")
-        .addClass("pscale-1")
+        $(this).closest(".skill")
+        .addClass("sscale-1")
         break;
       case 2:
-        $(this).closest(".points")
-        .addClass("pscale-2")
+        $(this).closest(".skill")
+        .addClass("sscale-2")
         break;
       case 3:
-        $(this).closest(".points")
-        .addClass("pscale-3")
+        $(this).closest(".skill")
+        .addClass("sscale-3")
         break;
       case 4:
-        $(this).closest(".points")
-        .addClass("pscale-4")
+        $(this).closest(".skill")
+        .addClass("sscale-4")
         break;
       case 5:
-        $(this).closest(".points")
-        .addClass("pscale-5")
+        $(this).closest(".skill")
+        .addClass("sscale-5")
         break;
       default:
     }

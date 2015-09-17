@@ -168,7 +168,7 @@ ul {
    -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
-  background-image: url('images/arrow.png');
+  background-image: url('arrow.png');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 15px;
@@ -410,39 +410,39 @@ ul {
 .blue{
   color: #3BBCB0;
 }
-.wscale-0{
+.pscale-0{
   border-left:3px solid #EE483E;
 }
-.wscale-1{
+.pscale-1{
   border-left:3px solid #990075;
 }
-.wscale-2{
+.pscale-2{
   border-left:3px solid #EDE540;
 }
-.wscale-3{
+.pscale-3{
   border-left:3px solid #F3873C;
 }
-.wscale-4{
+.pscale-4{
   border-left:3px solid #4293EA;
 }
-.wscale-5{
+.pscale-5{
   border-left:3px solid #3BBCB0;
 }
-.pscale-0{
+.sscale-0{
   border-right:3px solid #EE483E;
 }
-.pscale-1{
+.sscale-1{
   border-right:3px solid #990075;
 }
-.pscale-2{
+.sscale-2{
   border-right:3px solid #EDE540;
 }
-.pscale-3{
+.sscale-3{
   border-right:3px solid #F3873C;
 }
-.pscale-4{
+.sscale-4{
   border-right:3px solid #4293EA;
 }
-.pscale-5{
+.sscale-5{
   border-right:3px solid #3BBCB0;
 }
