@@ -72,6 +72,9 @@ ul {
   width: 350px;
   margin:10px;
 }
+.hidden{
+  display:none;
+}
 .title{
   cursor:pointer;
   display:-webkit-box;

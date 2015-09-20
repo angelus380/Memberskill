@@ -38,52 +38,52 @@ $(document).ready(function(){
       $("#fit").parent()
       .addClass("blue");
 
-    var ta = +$("#challenge").text();
+    var ta = +$("#bill").text();
     if (ta < 50){
-      $("#challenge").parent()
+      $("#bill").parent()
       .addClass("bgred");
       }else if (ta <75){
-      $("#challenge").parent()
+      $("#bill").parent()
       .addClass("bgyellow");
       }else
-      $("#challenge").parent()
+      $("#bill").parent()
       .addClass("bgblue");
     
-    var tb = +$("#environment").text();
+    var tb = +$("#steve").text();
     if (tb < 50){
-      $("#environment").parent()
+      $("#steve").parent()
       .addClass("bgred");
       }else if (tb <75){
-      $("#environment").parent()
+      $("#steve").parent()
       .addClass("bgyellow");
       }else
-      $("#environment").parent()
+      $("#steve").parent()
       .addClass("bgblue");
     
-    var tc = +$("#economics").text();
+    var tc = +$("#dennis").text();
     if (tc < 50){
-      $("#economics").parent()
+      $("#dennis").parent()
       .addClass("bgred");
       }else if (tc <75){
-      $("#economics").parent()
+      $("#dennis").parent()
       .addClass("bgyellow");
       }else
-      $("#economics").parent()
+      $("#dennis").parent()
       .addClass("bgblue");
     
-    var td = +$("#competencies").text();
+    var td = +$("#bruce").text();
     if (td < 50){
-      $("#competencies").parent()
+      $("#bruce").parent()
       .addClass("bgred");
       }else if (td <75){
-      $("#competencies").parent()
+      $("#bruce").parent()
       .addClass("bgyellow");
       }else
-      $("#competencies").parent()
+      $("#bruce").parent()
       .addClass("bgblue");
 
-    var weight = +$(this).closest(".project").val();
-    switch (weight){
+    var project = +$(this).closest(".project").val();
+    switch (project){
       case 0:
         $(this).closest(".project")
         .addClass("pscale-0")
@@ -111,9 +111,8 @@ $(document).ready(function(){
       default:
     }
 
-    //  changes "points" dropdown background-color//
-    var points = +$(this).closest(".skill").val();
-    switch (points){
+    var skill = +$(this).closest(".skill").val();
+    switch (skill){
       case 0:
         $(this).closest(".skill")
         .addClass("sscale-0")
