@@ -139,7 +139,5 @@ $(document).ready(function(){
         break;
       default:
     }
-
-
   }).change();
 })
