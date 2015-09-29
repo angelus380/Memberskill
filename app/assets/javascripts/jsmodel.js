@@ -8,8 +8,9 @@ $(document).ready(function(){
   })
 
   $("select").change(function(){
-    $(".calculator").removeClass("bgred bgyellow bgblue red yellow blue");
-    $(".fitbar").removeClass("bgred bgyellow bgblue red yellow blue");
+    $(".calculator").removeClass("bgred bgyellow bgblue");
+    $(".calculator1").removeClass("red yellow blue");
+    $(".fitbar").removeClass("bgred bgyellow bgblue");
     $(this).closest(".project").removeClass("pscale-0 pscale-1 pscale-2 pscale-3 pscale-4 pscale-5");
     $(this).closest(".skill").removeClass("sscale-0 sscale-1 sscale-2 sscale-3 sscale-4 sscale-5");
     
@@ -38,48 +39,48 @@ $(document).ready(function(){
       $("#fit").parent()
       .addClass("blue");
 
-    var ta = +$("#bill").text();
+    var ta = +$("#typeI").text();
     if (ta < 50){
-      $("#bill").parent()
+      $("#typeI").parent()
       .addClass("bgred");
       }else if (ta <75){
-      $("#bill").parent()
+      $("#typeI").parent()
       .addClass("bgyellow");
       }else
-      $("#bill").parent()
+      $("#typeI").parent()
       .addClass("bgblue");
     
-    var tb = +$("#steve").text();
+    var tb = +$("#typeII").text();
     if (tb < 50){
-      $("#steve").parent()
+      $("#typeII").parent()
       .addClass("bgred");
       }else if (tb <75){
-      $("#steve").parent()
+      $("#typeII").parent()
       .addClass("bgyellow");
       }else
-      $("#steve").parent()
+      $("#typeII").parent()
       .addClass("bgblue");
     
-    var tc = +$("#dennis").text();
+    var tc = +$("#typeIII").text();
     if (tc < 50){
-      $("#dennis").parent()
+      $("#typeIII").parent()
       .addClass("bgred");
       }else if (tc <75){
-      $("#dennis").parent()
+      $("#typeIII").parent()
       .addClass("bgyellow");
       }else
-      $("#dennis").parent()
+      $("#typeIII").parent()
       .addClass("bgblue");
     
-    var td = +$("#bruce").text();
+    var td = +$("#typeIV").text();
     if (td < 50){
-      $("#bruce").parent()
+      $("#typeIV").parent()
       .addClass("bgred");
       }else if (td <75){
-      $("#bruce").parent()
+      $("#typeIV").parent()
       .addClass("bgyellow");
       }else
-      $("#bruce").parent()
+      $("#typeIV").parent()
       .addClass("bgblue");
 
     var project = +$(this).closest(".project").val();

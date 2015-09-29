@@ -44,9 +44,9 @@ function myFunction() {
           product4 = (g1*h1)+(g2*h2)+(g3*h3)+(g4*h4)
           total4 = (sum4*5)==0 ? 0 :(product4*100)/(sum4*5)
           totalA = (sum1+sum2+sum3+sum4) == 0 ? 0 :((total1*sum1)+(total2*sum2)+(total3*sum3)+(total4*sum4))/(sum1+sum2+sum3+sum4)
-      document.getElementById("bill").innerHTML = total1.toFixed(2);
-      document.getElementById("steve").innerHTML = total2.toFixed(2);
-      document.getElementById("dennis").innerHTML = total3.toFixed(2);
-      document.getElementById("bruce").innerHTML = total4.toFixed(2);
+      document.getElementById("typeI").innerHTML = total1.toFixed(2);
+      document.getElementById("typeII").innerHTML = total2.toFixed(2);
+      document.getElementById("typeIII").innerHTML = total3.toFixed(2);
+      document.getElementById("typeIV").innerHTML = total4.toFixed(2);
       document.getElementById("fit").innerHTML = totalA.toFixed(2);
     }
